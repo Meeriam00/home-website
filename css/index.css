@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    .navbar-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  
+    .text-container {
+      margin-top: 200px;
+  
+      button {
+        transition: all 2s ease;
+        border: none;
+  
+        &:hover {
+          transform: scale(1.1);
+          background-color: brown;
+          color: white;
+        }
+      }
+    }
+  }
+  
+  main {
+    .about-us {
+      width: 100%;
+      height: 120vh;
+    }
+  }
+  
+  .products-container {
+    .products-card-container {
+      display: flex;
+      flex-direction: row;
+  
+      .card {
+        border: none;
+        transition: all 2s ease;
+  
+        &:hover {
+          transform: scale(1.1);
+          border: 1px solid #e4e2e2;
+          border-radius: 0.75rem;
+          width: auto;
+          height: auto;
+        }
+  
+        .card-body {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+  
+          h5 {
+            font-size: 19px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #444444;
+          }
+  
+          p {
+            font-size: 18px;
+            font-family: 'Playwrite Danmark Loopet';
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  
+  .texts-container {
+    color: white;
+  
+    h3 {
+      animation-name: moveh3;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+  
+    #p1 {
+      animation-name: movep1;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+  
+    #p2 {
+      animation-name: movep2;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+  }
+  
+  @keyframes moveh3 {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes movep1 {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes movep2 {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .vase-images-container {
+    .image {
+      animation-name: moveimg;
+      animation-duration: 5s;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+    }
+  }
+  
+  @keyframes moveimg {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .small-images {
+    position: relative;
+  }
+  
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    color: #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .image-position {
+    position: relative;
+  }
+  
+  .textes-container {
+    position: absolute;
+    left: 30%;
+    top: 35%;
+  }
+  
+  .list {
+    ul {
+      list-style-type: none;
+  
+      li {
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 19px;
+          font-weight: 100;
+        }
+  
+        h6 {
+          color: white;
+          font-size: 24px;
+          font-weight: lighter;
+          font-family: 'Playwrite België Vlaams Gewest';
+        }
+      }
+    }
+  }
+  
+  .lookbook-section {
+    background-color: #293648;
+    width: 100%;
+    height: auto;
+    color: white;
+  
+    .cards-containers {
+      background-color: #293648;
+      width: 100%;
+      height: auto;
+  
+      .card {
+        border: none;
+        transition: all 2s ease;
+  
+        &:hover {
+          transform: scale(1.1);
+        }
+  
+        .card-body {
+          background-color: #293648;
+          color: white;
+        }
+      }
+    }
+  }
+  
+  .every-deatils {
+    .images {
+      img {
+        animation-name: moveimage;
+        animation-iteration-count: initial;
+        animation-duration: 5s;
+        animation-delay: 2s;
+      }
+    }
+  }
+  
+  .all-articles {
+    .card {
+      transition: all 2s ease;
+      animation-name: movecard;
+      animation-duration: 3s;
+      animation-delay: 0s;
+      animation-iteration-count: 5;
+    }
+  }
+  
+  @keyframes movecard {
+    0% {
+      transform: scale(1);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    header {
+      .text-container {
+        h1 {
+          font-size: 72px !important;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    header {
+      .text-container {
+        margin-top: 150px;
+  
+        h1 {
+          font-size: 56px !important;
+        }
+      }
+    }
+  
+    .about-us {
+      .general-information {
+        h1 {
+          font-size: 40px !important;
+        }
+  
+        p {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    header {
+      .text-container {
+        h1 {
+          font-size: 32px !important;
+        }
+  
+        button {
+          padding: 8px 20px !important;
+        }
+      }
+  
+      .navbar-container {
+        .navbar-nav {
+          text-align: center;
+        }
+      }
+    }
+  
+    .textes-container {
+      left: 10% !important;
+      right: 10% !important;
+      text-align: center;
+    }
+  
+    .list {
+      ul {
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+  }
+  
+  
