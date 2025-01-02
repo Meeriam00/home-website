@@ -255,70 +255,282 @@ header {
   }
   
   @media screen and (max-width: 1200px) {
+    /* Header Section */
     header {
       .text-container {
+        display: flex;
+        flex-direction: center;
+        align-items: center;
         h1 {
           font-size: 72px !important;
         }
       }
     }
+
+    /* Products Section */
+    .products-container {
+      padding: 0 30px;
+      .products-card-container {
+        .card {
+          width: 16rem !important;
+        }
+      }
+    }
+
+    /* About Us Section */
+    .about-us {
+      .general-information {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
   }
-  
+
   @media screen and (max-width: 991px) {
+    /* Header Section */
     header {
       .text-container {
         margin-top: 150px;
-  
+        display: flex;
+        flex-direction: center;
+        align-items: center;
         h1 {
           font-size: 56px !important;
         }
+        button {
+          font-size: 14px;
+        }
       }
     }
-  
+
+    /* About Us Section */
     .about-us {
+      height: auto !important;
+      
       .general-information {
+        width: 90%;
         h1 {
           font-size: 40px !important;
         }
-  
         p {
           font-size: 14px !important;
+          line-height: 1.6;
+        }
+      }
+      img {
+        max-width: 80%;
+        height: auto;
+      }
+    }
+
+    /* Products Section */
+    .products-container {
+      padding: 0 20px;
+      .products-card-container {
+        .card {
+          width: 14rem !important;
+          margin: 10px !important;
+        }
+      }
+    }
+
+    /* Lookbook Section */
+    .lookbook-section {
+      padding: 40px 20px;
+      .cards-containers {
+        .card {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    /* Every Details Section */
+    .every-deatils {
+      .images {
+        text-align: center;
+        img {
+          max-width: 90%;
+          height: auto;
+          margin: 15px auto;
         }
       }
     }
   }
-  
-  @media screen and (max-width: 576px) {
+
+  @media screen and (max-width: 768px) {
+    /* Header Section */
     header {
+      .navbar-container {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px 0;
+      }
       .text-container {
+        margin-top: 120px;
+        padding: 0 20px;
         h1 {
-          font-size: 32px !important;
-        }
-  
-        button {
-          padding: 8px 20px !important;
+          font-size: 42px !important;
         }
       }
-  
+    }
+
+    /* Carousel */
+    .carousel-item img {
+      height: 100vh !important;
+    }
+
+    /* About Us Section */
+    .about-us {
+      padding: 40px 0;
+      .img1, .img2, .img3, .im4, .img5, .img6 {
+        display: none;
+      }
+      .general-information {
+        position: relative !important;
+        transform: none !important;
+        top: 0 !important;
+        left: 0 !important;
+        padding: 20px;
+        width: 100%;
+      }
+    }
+
+    /* Products Section */
+    .products-container {
+      .products-card-container {
+        flex-direction: column;
+        align-items: center;
+        .card {
+          width: 90% !important;
+          margin: 15px auto !important;
+          .card-body {
+            padding: 15px;
+          }
+        }
+      }
+    }
+
+    /* Vertical Text */
+    .vertical-text {
+      writing-mode: horizontal-tb;
+      border-right: none;
+      border-bottom: 1px solid #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    /* Lookbook Section */
+    .lookbook-section {
+      .cards-containers {
+        .card {
+          width: 90% !important;
+          margin: 15px auto !important;
+        }
+      }
+    }
+
+    /* All Articles Section */
+    .all-articles {
+      .card {
+        width: 90% !important;
+        margin: 15px auto !important;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    /* Header Section */
+    header {
       .navbar-container {
+        padding: 5px 0;
         .navbar-nav {
           text-align: center;
         }
       }
+      .text-container {
+        margin-top: 100px;
+        h1 {
+          font-size: 32px !important;
+        }
+        button {
+          padding: 8px 20px !important;
+          font-size: 14px;
+        }
+      }
     }
-  
+
+    /* Text Containers */
     .textes-container {
-      left: 10% !important;
-      right: 10% !important;
+      left: 5% !important;
+      right: 5% !important;
       text-align: center;
+      width: 90%;
+      margin: 0 auto;
     }
-  
+
+    /* List Section */
     .list {
       ul {
         padding-left: 0;
         text-align: center;
+        li {
+          margin-bottom: 10px;
+          h6 {
+            font-size: 20px;
+          }
+          a {
+            font-size: 16px;
+          }
+        }
       }
     }
+
+    /* Products Section */
+    .products-container {
+      padding: 0 15px;
+      .card {
+        width: 100% !important;
+        margin: 10px 0 !important;
+      }
+    }
+
+    /* Lookbook Section */
+    .lookbook-section {
+      padding: 30px 15px;
+      .cards-containers {
+        .card {
+          width: 100% !important;
+          margin: 10px 0 !important;
+        }
+      }
+    }
+
+    /* Every Details Section */
+    .every-deatils {
+      padding: 0 15px;
+      .images {
+        img {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    /* All Articles Section */
+    .all-articles {
+      padding: 0 15px;
+      .card {
+        width: 100% !important;
+        margin: 10px 0 !important;
+      }
+    }
+
+    /* General Spacing */
+    .my-5 {
+      margin-top: 2rem !important;
+      margin-bottom: 2rem !important;
+    }
+    
+    .mb-5 {
+      margin-bottom: 2rem !important;
+    }
   }
-  
-  
